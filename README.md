@@ -313,3 +313,5 @@ Contributions are welcome.
 Bug reports, feature requests, documentation improvements, and pull requests are encouraged.
 
 Please open an issue before submitting substantial changes.
+
+This repository is archived with Zenodo to ensure long-term preservation and citation of released versions.
