@@ -1,5 +1,6 @@
 # Behavioural Segmentation Toolkit
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21445463.svg)](https://doi.org/10.5281/zenodo.21445463)
 ![R](https://img.shields.io/badge/R-4.5%2B-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 ![Status](https://img.shields.io/badge/status-stable-brightgreen.svg)
