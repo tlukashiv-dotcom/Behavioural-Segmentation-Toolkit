@@ -1,0 +1,36 @@
+variable,label,role,group,data_type,scale,include_segmentation,include_profiling,allow_missing,description
+respondent_id,Respondent ID,metadata,Identifier,identifier,NA,FALSE,FALSE,FALSE,Unique respondent identifier
+synthetic_true_segment,Synthetic True Segment,metadata,Validation,categorical,Nominal,FALSE,FALSE,TRUE,Known synthetic segment for benchmarking clustering algorithms
+survey_weight_seed,Synthetic Weight Seed,metadata,Weight,numeric,Continuous,FALSE,FALSE,TRUE,Synthetic weighting variable for reproducible examples
+age_group,Age Group,profiling,Demographics,categorical,Ordinal,FALSE,TRUE,TRUE,Respondent age group
+gender,Gender,profiling,Demographics,categorical,Nominal,FALSE,TRUE,TRUE,Self-reported gender
+region,Region,profiling,Geography,categorical,Nominal,FALSE,TRUE,TRUE,Region of residence
+education_level,Education Level,profiling,Demographics,categorical,Ordinal,FALSE,TRUE,TRUE,Highest education level
+employment_status,Employment Status,profiling,Demographics,categorical,Nominal,FALSE,TRUE,TRUE,Employment status
+income_band,Income Band,profiling,Demographics,categorical,Ordinal,FALSE,TRUE,TRUE,Household income band
+weekly_behaviour_frequency,Weekly Behaviour Frequency,segmentation,Behaviour,numeric,Count,TRUE,FALSE,TRUE,Behaviour frequency per week
+monthly_spend,Monthly Spend,segmentation,Behaviour,numeric,Continuous,TRUE,FALSE,TRUE,Monthly expenditure
+previous_action_attempts,Previous Action Attempts,segmentation,Behaviour,numeric,Count,TRUE,FALSE,TRUE,Number of previous attempts
+engagement_minutes_monthly,Monthly Engagement Minutes,segmentation,Behaviour,numeric,Continuous,TRUE,FALSE,TRUE,Monthly engagement duration
+awareness_score,Awareness Score,segmentation,Awareness,ordinal,1-5,TRUE,FALSE,TRUE,Higher values indicate greater awareness
+trust_score,Trust Score,segmentation,Trust,ordinal,1-5,TRUE,FALSE,TRUE,Higher values indicate greater trust
+confidence_score,Confidence Score,segmentation,Confidence,ordinal,1-5,TRUE,FALSE,TRUE,Higher values indicate greater confidence
+change_intention_score,Change Intention,segmentation,Readiness,ordinal,1-5,TRUE,FALSE,TRUE,Higher values indicate stronger intention to change
+perceived_social_norm_score,Perceived Social Norm,segmentation,Social Influence,ordinal,1-5,TRUE,FALSE,TRUE,Perceived social approval
+service_satisfaction_score,Service Satisfaction,segmentation,Experience,ordinal,1-5,TRUE,FALSE,TRUE,Overall satisfaction
+motivation_health,Health Motivation,segmentation,Motivation,ordinal,1-5,TRUE,FALSE,TRUE,Health-related motivation
+motivation_financial,Financial Motivation,segmentation,Motivation,ordinal,1-5,TRUE,FALSE,TRUE,Financial motivation
+motivation_social,Social Motivation,segmentation,Motivation,ordinal,1-5,TRUE,FALSE,TRUE,Social motivation
+motivation_convenience,Convenience Motivation,segmentation,Motivation,ordinal,1-5,TRUE,FALSE,TRUE,Convenience motivation
+barrier_cost,Cost Barrier,segmentation,Barrier,ordinal,1-5,TRUE,FALSE,TRUE,Financial barrier
+barrier_time,Time Barrier,segmentation,Barrier,ordinal,1-5,TRUE,FALSE,TRUE,Time-related barrier
+barrier_habit,Habit Barrier,segmentation,Barrier,ordinal,1-5,TRUE,FALSE,TRUE,Habit strength
+barrier_low_confidence,Low Confidence Barrier,segmentation,Barrier,ordinal,1-5,TRUE,FALSE,TRUE,Lack of confidence
+barrier_information,Information Barrier,segmentation,Barrier,ordinal,1-5,TRUE,FALSE,TRUE,Lack of information
+used_digital_tool,Used Digital Tool,segmentation,Behaviour,binary,0-1,TRUE,TRUE,TRUE,Used digital intervention
+sought_support,Sought Support,segmentation,Behaviour,binary,0-1,TRUE,TRUE,TRUE,Sought external support
+recent_positive_action,Recent Positive Action,segmentation,Behaviour,binary,0-1,TRUE,TRUE,TRUE,Recent positive behavioural action
+would_recommend_service,Would Recommend Service,segmentation,Behaviour,binary,0-1,TRUE,TRUE,TRUE,Would recommend service
+preferred_information_channel,Preferred Information Channel,profiling,Communication,categorical,Nominal,FALSE,TRUE,TRUE,Preferred communication channel
+preferred_support_type,Preferred Support Type,profiling,Support,categorical,Nominal,FALSE,TRUE,TRUE,Preferred support type
+open_feedback,Open Feedback,profiling,Qualitative,text,Free text,FALSE,TRUE,TRUE,Open-ended respondent comments
