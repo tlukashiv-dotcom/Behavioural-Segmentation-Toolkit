@@ -307,7 +307,7 @@ GitHub: https://github.com/tlukashiv-dotcom
 ---
 
 # Contributing
-
+  
 Contributions are welcome.
 
 Bug reports, feature requests, documentation improvements, and pull requests are encouraged.
