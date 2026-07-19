@@ -168,7 +168,7 @@ The toolkit has been tested with:
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Behavioural-Segmentation-Toolkit.git
+git clone https://github.com/tlukashiv-dotcom/Behavioural-Segmentation-Toolkit.git
 
 cd Behavioural-Segmentation-Toolkit
 ```
