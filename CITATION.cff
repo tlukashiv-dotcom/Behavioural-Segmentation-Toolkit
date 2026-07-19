@@ -2,7 +2,6 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it as follows."
 
 title: "Behavioural Segmentation Toolkit"
-
 type: software
 
 authors:
@@ -10,9 +9,8 @@ authors:
     given-names: Taras
 
 license: MIT
-
 version: 1.0.0
-
 date-released: 2026-07-19
 
 repository-code: https://github.com/tlukashiv-dotcom/Behavioural-Segmentation-Toolkit
+url: https://github.com/tlukashiv-dotcom/Behavioural-Segmentation-Toolkit
