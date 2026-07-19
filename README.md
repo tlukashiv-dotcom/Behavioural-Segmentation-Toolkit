@@ -10,7 +10,7 @@ The toolkit is designed for applications in **public health**, **market research
 
 ---
 
-## Highlights
+# Highlights
 
 - Fully reproducible end-to-end analytical pipeline
 - Automated model selection and validation
@@ -18,9 +18,11 @@ The toolkit is designed for applications in **public health**, **market research
 - Modular architecture for easy customization
 - Designed for research and applied behavioural analytics
 
-## Key Features
+---
 
-### Data Preparation
+# Key Features
+
+## Data Preparation
 
 - Data quality assessment
 - Automated preprocessing
@@ -28,7 +30,7 @@ The toolkit is designed for applications in **public health**, **market research
 - Variable type detection
 - Data dictionary generation
 
-### Segmentation Modelling
+## Segmentation Modelling
 
 - Feature quality assessment
 - Feature selection
@@ -38,7 +40,7 @@ The toolkit is designed for applications in **public health**, **market research
 - Bootstrap stability validation
 - Final model selection
 
-### Interpretation
+## Interpretation
 
 - Automatic segment profiling
 - Behavioural segment naming
@@ -46,7 +48,7 @@ The toolkit is designed for applications in **public health**, **market research
 - Intervention recommendations
 - KPI framework generation
 
-### Reporting
+## Reporting
 
 - HTML report generation
 - Microsoft Word report generation
@@ -56,9 +58,9 @@ The toolkit is designed for applications in **public health**, **market research
 
 ---
 
-## Workflow
+# Workflow
 
-The toolkit implements a fully automated workflow consisting of eighteen sequential stages.
+The toolkit implements a fully automated workflow consisting of eighteen sequential analytical stages.
 
 ```text
                            Raw Survey Data
@@ -120,14 +122,16 @@ The toolkit implements a fully automated workflow consisting of eighteen sequent
 
 ---
 
-## Repository Structure
+# Repository Structure
 
 ```text
 Behavioural-Segmentation-Toolkit/
 
+├── config/
 ├── data/
-├── outputs/
+│   └── raw/
 ├── *.R
+├── Behavioural Segmentation Toolkit.Rproj
 ├── README.md
 ├── LICENSE
 └── CITATION.cff
@@ -135,16 +139,18 @@ Behavioural-Segmentation-Toolkit/
 
 ---
 
-## Requirements
+# Requirements
 
 The toolkit has been tested with:
 
-- R 4.5.1 or later
+- R 4.5.1
 - Windows
 - macOS
 - Linux
 
-### Main Dependencies
+The toolkit is expected to be compatible with newer R releases.
+
+## Main Dependencies
 
 - dplyr
 - tidyr
@@ -163,7 +169,7 @@ The toolkit has been tested with:
 
 ---
 
-## Installation
+# Installation
 
 Clone the repository:
 
@@ -172,6 +178,8 @@ git clone https://github.com/tlukashiv-dotcom/Behavioural-Segmentation-Toolkit.g
 
 cd Behavioural-Segmentation-Toolkit
 ```
+
+Open **Behavioural Segmentation Toolkit.Rproj** in RStudio (recommended).
 
 Install the required R packages:
 
@@ -196,9 +204,7 @@ install.packages(c(
 
 ---
 
-## Quick Start
-
-Open the project in **RStudio** (recommended) or set the working directory to the repository root.
+# Quick Start
 
 Run the complete analytical workflow with a single command:
 
@@ -206,15 +212,15 @@ Run the complete analytical workflow with a single command:
 source("18_run_complete_pipeline.R")
 ```
 
-The pipeline automatically executes all analytical stages, validates intermediate outputs, records execution logs, and generates all final deliverables.
+The pipeline automatically executes all 18 analytical stages, validates intermediate outputs, records execution logs, and generates the complete set of reports, figures, personas, recommendations, and summary tables.
 
 > **Note:** The first execution may take several minutes depending on the size of the input dataset and the selected validation settings.
 
 ---
 
-## Outputs
+# Outputs
 
-Upon successful execution, the toolkit generates the following directory structure:
+During execution, the toolkit automatically creates an **outputs/** directory containing:
 
 ```text
 outputs/
@@ -241,7 +247,7 @@ Generated outputs include:
 
 ---
 
-## Pipeline Stages
+# Pipeline Stages
 
 | Stage | Description |
 |------:|-------------|
@@ -266,7 +272,7 @@ Generated outputs include:
 
 ---
 
-## Reproducibility
+# Reproducibility
 
 The toolkit has been validated using:
 
@@ -278,13 +284,13 @@ The toolkit is designed to ensure transparent and reproducible analyses. All res
 
 ---
 
-## Citation
+# Citation
 
-If you use this toolkit in academic research or applied projects, please cite the software using the metadata provided in **CITATION.cff**.
+If you use this toolkit in research or applied projects, please cite it using the metadata provided in **CITATION.cff**.
 
 ---
 
-## License
+# License
 
 This project is licensed under the **MIT License**.
 
@@ -292,13 +298,15 @@ See the **LICENSE** file for details.
 
 ---
 
-## Author
+# Author
 
-Taras Lukashiv
+**Taras Lukashiv**
+
+GitHub: https://github.com/tlukashiv-dotcom
 
 ---
 
-## Contributing
+# Contributing
 
 Contributions are welcome.
 
